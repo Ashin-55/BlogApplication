@@ -1,0 +1,18 @@
+.postContent{
+    letter-spacing: -0.003em;
+    line-height: 32px;
+    margin-top: 2em;
+    font-size: 20px;
+    margin-bottom: -0.46em;
+    letter-spacing: -0.004em;
+    font-style: normal;
+    word-break: break-word;
+    color: rgba(41, 41, 41, 1);
+    font-weight: 400;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    word-wrap: break-word;
+}
