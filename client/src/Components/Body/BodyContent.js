@@ -381,8 +381,7 @@ const BodyContent = ({ author }) => {
                   key={post._id}
                   onClick={() => postDetailHandler(post._id)}
                   sx={{
-                    border: "2px solid",
-                    borderColor: "gray",
+                    boxShadow: 1,
                     borderRadius: 5,
                     padding: "2%",
                     marginY: "2%",
@@ -401,14 +400,14 @@ const BodyContent = ({ author }) => {
                       />
                     </Grid>
                     <Grid item xs={7}>
-                      <Typography sx={{ fontWeight: 600, fontSize: "15px" }}>
+                      <Typography sx={{ fontWeight: 600, fontSize: "13px" }}>
                         {post.postTitle.substring(0, 35)}..
                       </Typography>
-                      <Typography fontSize={"15px"}>
+                      <Typography fontSize={"11px"}>
                         {" "}
                         {post.likeCount} likes
                       </Typography>
-                      <Typography fontSize={"15px"}>
+                      <Typography fontSize={"11px"}>
                         By {post.authorId.firstName} {post.authorId.lastName}
                       </Typography>
                     </Grid>
@@ -433,11 +432,11 @@ const BodyContent = ({ author }) => {
               ACTIVE AUTHORS
             </Typography>
             {allPopularAuthors.map((post, index) => {
-              return (   
+              return (
                 <Box
                   key={post.authorData._id}
                   sx={{
-                    border: "2px solid",
+                    boxShadow: 1,
                     borderColor: "gray",
                     borderRadius: 5,
                     padding: "2%",
